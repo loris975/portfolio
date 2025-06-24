@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer type="text/javascript" src="https://spynets.github.io/RapidElements/bin/RapidElements.js" ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <title>TV&PHOTOS</title>
+</head>
+<body>
+<<<<<<< HEAD
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#services">Portfolio</a>
+            <!--<a href="#portfolio">Portfolio</a>-->
+           <!-- <a href="#contact">Contact</a> -->
+        </nav>
+
+    </header>
+    <section>
+
+        <div class="photos_btn">
+        <p>Photos</p>
+        </div>
+    <div class="con_photo">
+        <div class="img-container">
+            <div class="image"><img src="photo\29102007.jpg" alt=""></div>
+            <div class="image"><img src="photo\07112007.jpg" alt=""></div>
+            <div class="image"><img src="photo\24102007.jpg" alt=""></div>
+            <div class="image"><img src="photo\11012008(001).jpg" alt=""></div>
+            <div class="image"><img src="photo\11012008(004).jpg" alt=""></div>
+            <div class="image"><img src="photo\30102007.jpg" alt=""></div>
+            <div class="image"><img src="photo\24102007.jpg" alt=""></div>
+            <div class="image"><img src="photo\26022008.jpg" alt=""></div>
+            <div class="image"><img src="photo\26022008(002).jpg" alt=""></div>
+            <div class="image"><img src="photo\26022008(005).jpg" alt=""></div>
+            <div class="image"><img src="photo\27022008.jpg" alt=""></div>
+            <div class="image"><img src="photo\Image000.jpg" alt=""></div>
+            <div class="image"><img src="photo\20071101628.jpg" alt=""></div>
+            <div class="image"><img src="photo\20070823510.jpg" alt=""></div>
+            <div class="image"><img src="photo\Untitled-2.jpg" alt=""></div>
+            <div class="image"><img src="photo\Untitled-21.jpg" alt=""></div>
+            <div class="image"><img src="photo\Untitled-23.jpg" alt=""></div>
+            <div class="image"><img src="photo\Untitled-2 copy.jpg" alt=""></div>
+            <div class="image"><img src="photo\Untitled-2 copy 3.jpg" alt=""></div>
+            <div class="image"><img src="photo\LORIS WITH DIANA HADAD.jpg" alt=""></div>
+            <div class="image"><img src="photo\Image410.jpg" alt=""></div>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="images/goarg_kordahi.png" alt="goarg_kordahi">
+        </div>
+=======
+</div>
+<div class="btn">
+    <p>صور</p>
+</div>
+<div class="con_photo">
+    <div class="img-container">
+        <div class="image"><img src="photo\29102007.jpg" alt=""></div>
+        <div class="image"><img src="photo\07112007.jpg" alt=""></div>
+        <div class="image"><img src="photo\24102007.jpg" alt=""></div>
+        <div class="image"><img src="photo\11012008(001).jpg" alt=""></div>
+        <div class="image"><img src="photo\11012008(004).jpg" alt=""></div>
+        <div class="image"><img src="photo/20070823525.jpg" alt=""></div>
+        <div class="image"><img src="photo/30102007.jpg" alt=""></div>
+        <div class="image"><img src="photo\26022008.jpg" alt=""></div>
+        <div class="image"><img src="photo\26022008(002).jpg" alt=""></div>
+        <div class="image"><img src="photo\26022008(005).jpg" alt=""></div>
+        <div class="image"><img src="photo\27022008.jpg" alt=""></div>
+        <div class="image"><img src="photo\Image000.jpg" alt=""></div>
+        <div class="image"><img src="photo\20071101628.jpg" alt=""></div>
+        <div class="image"><img src="photo\20070823510.jpg" alt=""></div>
+        <div class="image"><img src="photo\Untitled-2.jpg" alt=""></div>
+        <div class="image"><img src="photo\Untitled-21.jpg" alt=""></div>
+        <div class="image"><img src="photo\Untitled-23.jpg" alt=""></div>
+        <div class="image"><img src="photo\Untitled-2 copy.jpg" alt=""></div>
+        <div class="image"><img src="photo\Untitled-2 copy 3.jpg" alt=""></div>
+        <div class="image"><img src="photo\LORIS WITH DIANA HADAD.jpg" alt=""></div>
+        <div class="image"><img src="photo\Image410.jpg" alt=""></div>
+>>>>>>> 1550435898ba35a82d97ff7d051b995310e81605
+    </div>
+    </section>
+
+
+<script>
+    document.querySelectorAll('.img-container img').forEach(image => {
+        image.onclick = () => {
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
+</body>
+</html>

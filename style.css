@@ -418,6 +418,21 @@ span {
     object-fit: cover;
 }
 
+.film_container {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping to next row */
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+.film_container iframe {
+    width: 600px;
+    height: 300px;
+    flex: 1 1 600px; /* allows two items per row, wraps after */
+    max-width: 100%;
+}
+
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -473,6 +488,11 @@ span {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .film_container iframe {
+        width: 100%;
+        height: auto; /* keeps aspect ratio if needed */
+
+    }
 
 }
 @media (max-width: 450px) {
@@ -499,6 +519,12 @@ span {
     text-align: center;
     margin-top: 2rem;
    }
+}
+@media (max-width: 600px) {
+    .film_container iframe {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
